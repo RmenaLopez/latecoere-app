@@ -1,0 +1,22 @@
+spring:
+  mvc:
+      view:
+        suffix: .jsp
+        prefix: /WEB-INF/jsp
+
+  datasource:
+    url: jdbc:sqlserver://localhost;databaseName=master
+    username: "sa"
+    password: "Sup3r-S3cr3t"
+    driver-class-name: com.microsoft.sqlserver.jdbc.SQLServerDriver
+
+  jpa:
+    show-sql: true
+    database-platform: org.hibernate.dialect.SQLServer2012Dialect
+    database: sql_server
+
+
+    hibernate:
+      ddl-auto: create-drop
+server:
+  port: 8888
